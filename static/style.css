@@ -1,0 +1,30 @@
+body {
+	text-align: center;
+}
+
+.gopher {
+	width: 20vw;
+	max-width: 50vh;
+	animation: spin infinite 20s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
